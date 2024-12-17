@@ -267,6 +267,10 @@ h3.subhead {
     & #motion, #direction, #timing {
         margin-top: 20px;
     }
+
+    & #direction {
+        width: 120px;
+    }
     
     & #element {
         text-align: center;
@@ -366,7 +370,7 @@ h3.subhead {
     & #timing, #motion-transition, #sound-color {
         margin-top: 20px;
     }
-    & #sound-color {
+    & #sound-color, #motion-transition {
         width: 160px;
     }
     
