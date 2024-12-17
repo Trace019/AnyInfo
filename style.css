@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bowlby+One+SC&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #eaeff3;
+    height: 6000px;
+    font-family: "Montserrat", serif;
+    padding-top: 40px;
+}
+
+/* Navigation Bar */
+
+.menubar {
+    background-color: rgba(53,57,53,0.85);
+    border-bottom: 2px solid #1f243d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.menu_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    min-height: 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: "Bowlby One", sans-serif;
+    color: whitesmoke;
+}
+
+.navbar {
+    
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+    
+    
+    #home {
+        color: whitesmoke;
+        font-size: 17px;
+        transition: 0.3s;
+    
+        &:hover {
+           transform: scale(1);
+           font-size: 24px;
+           color: violet;
+        }
+    }
+    
+    #media {
+        color: whitesmoke;
+        font-size: 17px;
+        transition: 0.3s;
+    
+        &:hover {
+           transform: scale(1);
+           font-size: 24px;
+           color: cornflowerblue;
+        }
+    }
+    
+    #java {
+        color: whitesmoke;
+        font-size: 17px;
+        transition: 0.3s;
+    
+        &:hover {
+           transform: scale(1);
+           font-size: 24px;
+           color: coral;
+        }
+    }
+    
+    #other {
+        color: whitesmoke;
+        font-size: 17px;
+        transition: 0.3s;
+    
+        &:hover {
+           transform: scale(1);
+           font-size: 24px;
+           color: cornsilk;
+        }
+    }
+    
+    #about {
+        color: whitesmoke;
+        font-size: 17px;
+        transition: 0.3s;
+    
+        &:hover {
+           transform: scale(1);
+           font-size: 24px;
+           color: chocolate;
+        }
+   }
+}
+
+/* Main Content for home.html */
+
+.main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#mil_title {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#mil_description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.table-title-mil {
+    font-family: "Fredoka", sans-serif;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Fredoka", sans-serif;
+    background-color: #282c35;
+    width: 250px;
+    border-collapse: collapse;
+    border-radius: 15px 15px 0 0;
+    padding: 12px 15px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+.table_content_mil {
+    margin: 0 auto;
+    border-collapse: collapse;
+    min-width: 500px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    font-family: "Fredoka", sans-serif;
+    table-layout: fixed;
+    text-align: center;
+    
+    & thead th {
+        background-color: #282c35;
+        color: whitesmoke;
+        letter-spacing: 0.3px;
+    }
+    
+    & th {
+        padding:  12px 15px;
+    }
+    
+    & td {
+        padding: 12px 15px;
+    }
+    
+    & tbody tr {
+        border-bottom: 2px solid #626c82;
+    }
+    
+    & tfoot tr {
+        border-bottom: 2px solid #282c35;
+    }
+}
+
+#java_title {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#java_description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Media.html Section */
+
+h1.head, h3.subhead {
+    font-family: "Bowlby One", sans-serif;
+    letter-spacing: 0.3px;
+}
+
+h3.subhead {
+    color: #626776;
+}
+
+/* Design Elements Tab */
+.design_elements {
+    text-align: center;
+    margin-top: 100px;
+    
+    & .elements {  
+    background-color: #036459;
+    min-width: auto;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    }
+     
+    /* Audio */
+    & #dialogue, #music, #sfx, #silence {
+        background-color: orangered;
+        color: whitesmoke;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 7px 7px;
+        font-family: "Bowlby One", sans-serif;
+        letter-spacing: 0.2;
+    }
+    
+    & #music, #sfx, #silence {
+        margin-top: 20px;
+    }
+    
+    & #element {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        margin-top: 5px;
+    }
+    
+    audio {
+        margin-top: 10px;
+        padding: 10px 10px;
+        margin: auto;
+    }
+    
+    /* Motion */
+    & #speed, #motion, #direction, #timing {
+        background-color: orangered;
+        color: whitesmoke;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 7px 7px;
+        font-family: "Bowlby One", sans-serif;
+        letter-spacing: 0.2;
+    }
+    
+    & #motion, #direction, #timing {
+        margin-top: 20px;
+    }
+    
+    & #direction {
+        width: 120px;
+    }
+    
+    & #element {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        margin-top: 5px;
+    }
+    
+    
+    /* Motion Animations */
+    
+    & .box1 {
+        margin-top: 20px;
+        background-color: #003E36;
+        box-shadow: rgba(0,62,54,0.3) 0px 3px 8px;
+        width: 60px;
+        height: 60px;
+        
+        animation-name: move;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+    & .box2 {
+        margin-top: 20px;
+        background-color: #003E36;
+        box-shadow: rgba(0,62,54,0.3) 0px 3px 8px;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        
+        animation-name: up;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+}
+
+/* Design Principles */
+.design_principles {
+    text-align: center;
+    margin-top: 100px;
+    
+    & .principles {  
+    background-color: #036459;
+    min-width: auto;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    }
+     
+    /* Audio */
+    & #mixing, #stereo-imaging, #pace, #audio-transition {
+        background-color: orangered;
+        color: whitesmoke;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 7px 7px;
+        font-family: "Bowlby One", sans-serif;
+        letter-spacing: 0.2;
+    }
+    
+    & #stereo-imaging, #pace, #audio-transition {
+        margin-top: 20px;
+    }
+    
+    & #stereo-imaging, #audio-transition {
+        width: 130px;
+    }
+    
+    & #element {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        margin-top: 5px;
+    }
+    
+    /* Motion */
+    & #speed, #timing, #motion-transition, #sound-color {
+        background-color: orangered;
+        color: whitesmoke;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 7px 7px;
+        font-family: "Bowlby One", sans-serif;
+        letter-spacing: 0.2;
+    }
+    
+    & #timing, #motion-transition, #sound-color {
+        margin-top: 20px;
+    }
+    & #sound-color, #motion-transition {
+        width: 160px;
+    }
+    
+}
+
+/* Motion Animation */
+@keyframes move {
+    0% {
+        background-color: black; 
+        margin-left: 0%;
+        transform: rotate(0);
+     }
+    50% {
+        background-color: black; 
+        margin-left: 80%;
+        transform: rotate(360deg);
+     }
+    100% {
+        background-color: black; 
+        margin-left: 0%;
+        transform: rotate(0);
+     }
+    }
+@keyframes up {
+    0% {
+        background-color: black; 
+        margin-top: 0%;
+        transform: rotate(0);
+     }
+    50% {
+        background-color: black; 
+        margin-top: 20%;
+        transform: rotate(360deg);
+     }
+    100% {
+        background-color: black; 
+        margin-top: 0%;
+        transform: rotate(0);
+     }
+    }
+
+
+/* about.html */
+.image-gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    
+}
+
+
+.image-item {
+    text-align: center; 
+}
+
+
+.image-item img {
+    width: auto; 
+    height: 45%; 
+    max-width: 160px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 2px;
+    margin-top: 100px;
+}
+
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    font-family: "Bowlby One SC", sans-serif;
+}
+
+.name-text {
+    font-family: "Bowlby One", sans-serif;
+}
+
+
+/* java.html */
+#javapicandh {
+    display: flex;
+    justify-content: center;
+}
+h1, h2 {
+    text-align: center;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#links {
+    text-decoration: underline;
+    color: blue;
+}
+#sources {
+    text-decoration: underline;
+    color:blue;
+}
+#javapic {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+}
+#wip {
+    margin: 100px;
+    font-size: 64px;
+    font-family: "Bowlby One SC", sans-serif;
+}
+
+/* sizing for smaller devices ex. phones */
+@media (max-width: 900px) {
+    & .menu_content {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    & .nav-list {
+        column-gap: 10px;
+    }
+    
+    & .table_content_mil {
+        font-size: 16px;
+        min-width: 100px;
+    }
+    
+    & th td {
+        padding: 5px 8px;
+    }
+    
+
+/* Put Code Above Design Principles */
